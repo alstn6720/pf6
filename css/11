@@ -1,0 +1,125 @@
+#hongsam div.wrap .hongsamlist div.hsgold div.hsimg {
+  
+}
+#hongsam div.wrap .hongsamlist div.hsgold div.text {
+  
+}
+#hongsam div.wrap .hongsamlist div.hsgold div.text hgroup {
+  
+  margin-top: 200px;
+  margin-bottom: 80px;
+}
+#hongsam div.wrap .hongsamlist div.hsgold div.text hgroup h2 {
+  
+  font-size: 60px;
+}
+#hongsam div.wrap .hongsamlist div.hsgold div.text hgroup h3 {
+  
+  margin-top: 10px;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+#hongsam div.wrap .hongsamlist div.hsgold div.text ul {
+  
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+#hongsam div.wrap .hongsamlist div.hsgold div.text li {
+  
+  display: flex;
+}
+#hongsam div.wrap .hongsamlist div.hsgold div.text li:nth-of-type(1){
+  
+}
+#hongsam div.wrap .hongsamlist div.hsgold div.text li:nth-of-type(2){
+  
+  width: 124px;
+  height: 30px;
+  display: flex;
+}
+#hongsam div.wrap .hongsamlist div.hsgold div.text li:nth-of-type(2):before{
+  content: "";
+  width: 55px;
+  height: 20px;
+  display: block;
+  background-image: url(../img/star.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#hongsam div.wrap .hongsamlist div.hsgold div.text li:nth-of-type(3){
+  
+  width: 200px;
+  height: 26px;
+}
+#hongsam div.wrap .hongsamlist div.hsgold div.text li:nth-of-type(4){
+  
+}
+#hongsam div.wrap .hongsamlist div.hsgold div.text li span{
+  
+  background: #fff;
+  border: 1px solid #d53147;
+  color: #d53147;
+  font-size: 15px;
+  line-height: 23px;
+  width: 40px;
+  display: block;
+  text-align: center;
+}
+#hongsam div.wrap .hongsamlist div.hsgold div.text li a {
+  
+  min-width: 70px;
+  height: 34px;
+  padding: 0 18px;
+  font-size: 13px;
+  display: block;
+  background-color: black;
+  color: white;
+  text-align: center;
+  line-height: 3;
+}
+#hongsam div.wrap .hongsamlist div.hsgold div.event {
+  
+  position: absolute;
+  width: 480px;
+  height: 120px;
+  bottom: 90px;
+  display: flex;
+  right: -60px;
+  gap: 20px;
+}
+#hongsam div.wrap .hongsamlist div.hsgold div.event:before{
+  content: "";
+  width: 120px;
+  height: 120px;
+  display: block;
+  
+  background-image: url(../img/event1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#hongsam div.wrap .hongsamlist div.hsgold div.event ul {
+  
+  width: 270px;
+}
+#hongsam div.wrap .hongsamlist div.hsgold div.event ul li {
+  
+}
+#hongsam div.wrap .hongsamlist div.hsgold div.event ul li:nth-child(1){
+  line-height: 1.7;
+  font-size: 17px;
+}
+#hongsam div.wrap .hongsamlist div.hsgold div.event ul li:nth-child(2){
+  font-size: 13px;
+  margin-bottom: 40px;
+}
+#hongsam div.wrap .hongsamlist div.hsgold div.event ul li:nth-child(3){
+  font-size: 13px;
+}
+#hongsam div.wrap .hongsamlist div.hsgold div.event ul li a {
+  
+  border-bottom: 1px solid;
+}

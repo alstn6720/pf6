@@ -1,0 +1,205 @@
+footer {
+  
+}
+footer div.wrap{
+  
+  width: 1100px;
+  padding: 70px 0 90px;
+  margin: 0 auto;
+}
+footer div.wrap div.top {
+  
+  display: flex;
+  align-items: center;
+  margin-bottom: 60px;
+  border-bottom: 1px solid #e5e5e5;
+}
+footer div.wrap div.top ul {
+  
+  display: flex;
+  gap: 15px;
+}
+footer div.wrap div.top ul li {
+  
+}
+footer div.wrap div.top ul li a {
+  
+  display: block;
+  line-height: 50px;
+  padding: 0 2px;
+  color: #221e1f;
+  font-weight: 500;
+  font-size: 16px;
+}
+footer div.wrap div.top ul li a:hover{
+  font-weight: bold;
+}
+footer div.wrap div.top dl {
+  
+  min-width: 230px;
+  margin-left: auto;
+  margin-bottom: -1px;
+}
+footer div.wrap div.top dl dt {
+  
+
+}
+footer div.wrap div.top dl dt button {
+  
+  width: 100%;
+  line-height: 50px;
+  padding: 0 6px;
+  background-color: #fff;
+  border-bottom: solid 1px #201f1f;
+  color: #221e1f;
+  font-family: 'Nanum Myeongjo';
+  font-weight: 700;
+  font-size: 16px;
+  text-align: left;
+  position: relative;
+  transition: all .2s;
+  border: transparent;
+  border-bottom: 1px solid #e5e5e5;
+}
+footer div.wrap div.top dl dt button:hover{
+  border-bottom: 1px solid #333;
+}
+footer div.wrap div.top dl dt button::after{
+  content: '';
+  display: block;
+  width: 12px;
+  height: 10px;
+  background: url(../img/arrow-select.png) no-repeat;
+    background-size: auto;
+  background-size: cover;
+  position: absolute;
+  top: 18px;
+  right: 6px;
+  -webkit-transform: rotate(0);
+  transform: rotate(0);
+  transition: all .2s;
+}
+footer div.bottom {
+  
+  position: relative;
+}
+footer div.bottom p {
+  
+}
+footer div.bottom p.logo {
+  
+  width: 170px;
+  height: 0;
+  max-height: 0;
+  padding-top: 24px;
+  margin-bottom: 28px;
+  background: url(../img/sublogo.png) no-repeat;
+  background-size: auto;
+  background-size: cover;
+  overflow: hidden;
+}
+footer div.bottom div.company {
+  
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+footer div.bottom div.company dl {
+  
+  display: flex;
+}
+footer div.bottom div.company dl dt {
+  
+  margin-right: 5px;
+  color: #656565;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -.02em;
+}
+footer div.bottom div.company dl dd {
+  
+  margin-right: 14px;
+  color: #656565;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: -.02em;
+}
+footer div.bottom div.company dl dd a {
+  
+}
+footer div.bottom div.service {
+  
+  display: flex;
+  width: 100%;
+  margin-top: 21px;
+}
+footer div.bottom div.service ul {
+  
+  display: flex;
+  margin-right: 20px;
+}
+footer div.bottom div.service ul li {
+  
+  width: 39px;
+  height: 39px;
+  font-size: 0;
+
+  background-size: auto;
+  background-size: cover;
+}
+footer div.bottom div.service ul li:nth-of-type(1){
+      background: url(../img/logo-escrow.png) no-repeat;
+}
+footer div.bottom div.service ul li:nth-of-type(2){
+      background: url(../img/logo-inipay.png) no-repeat;
+}
+footer div.bottom div.service p {
+  
+  flex-grow: 1;
+  padding-top: 6px;
+  color: #959595;
+  font-weight: 500;
+  font-size: 12px;
+}
+footer div.bottom dl {
+  
+}
+footer div.bottom dl dt {
+  
+  margin-right: 14px;
+  color: #656565;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: -.02em;
+}
+footer div.bottom dl dd {
+  
+  margin-right: 14px;
+  color: #656565;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: -.02em;
+}
+footer div.bottom dl dd span {
+  
+  margin-right: 35px;
+}
+.contact{
+    margin-left: auto;
+}
+dl.contact{
+  
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+dl.contact dd.tell{
+  
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+dl.contact dd.time{
+  
+  font-size: 17px;
+  margin-bottom: 12px;
+}

@@ -1,0 +1,48 @@
+#story {
+  
+}
+#story div.wrap {
+  
+  width: 1920px;
+  height: 720px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f9f9f9;
+  justify-content: center;
+}
+#story div.wrap h2 {
+  
+  font-size: 18px;
+}
+#story div.wrap div.text {
+  
+  margin-top: 35px;
+}
+#story div.wrap div.text h3 {
+  
+  font-size: 50px;
+}
+#story div.wrap div.text ul {
+  
+  text-align: center;
+  display: none;
+}
+#story div.wrap div.text ul li {
+  
+}
+#story div.wrap a {
+  
+  width: 90px;
+  height: 50px;
+  background-image: url(../img/tt.icon6.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-size: 0;
+  margin-top: 50px;
+}
+#story div.wrap a:hover{
+  
+  background-image: url(../img/tt.icon6.hover.png);
+}
