@@ -33,6 +33,7 @@ div.title .wrap .slick-prev{
   border-radius: 50%;
   opacity: 0.6;
   top: 700px;
+  z-index: 1;
 }
 div.title .wrap .slick-next{
   right: 550px;
@@ -64,5 +65,48 @@ div.title .wrap ul.slick-dots li button{
 .transform{
   transform: translate(58%) scale(1.2);
 }
-
-  
+.tag{
+  box-sizing: border-box;
+  display: inline-block;
+  min-width: 40px;
+  line-height: 18px;
+  padding: 0 6px;
+  background-color: #97979b;
+  border: 1px solid #97979b;
+  color: #221e1f;
+  font-weight: 700;
+  font-size: 12px;
+  text-align: center;
+}
+.rate{
+  background: #fff;
+  border: 1px solid #d53147;
+  color: #d53147;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 21px;
+  margin-right: 8px;
+}
+.cont{
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  margin-top: 5px;
+}
+.bh{
+  font-size: 13px;
+  font-weight: 400;
+  margin-right: 8px;
+  color: #959595;
+}
+.discount{
+  font-size: 14px;
+  color: #959595;
+  text-decoration: line-through;
+}
+.won{
+  font-size: 14px;
+  font-weight: 300;
+  color: #959595;
+}

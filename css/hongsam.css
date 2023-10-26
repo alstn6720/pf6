@@ -18,10 +18,11 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   position: relative;
   border-right: 1px solid;
   overflow: hidden;
+  transition: all 2s;
 }
 #hongsam div.wrap .hongsamlist div.hsstick div.hsimg {
   
@@ -34,9 +35,11 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+  transition: all 2s;
 }
 #hongsam div.wrap .hongsamlist div.hsstick div.text {
   
+  text-align: start;
 }
 #hongsam div.wrap .hongsamlist div.hsstick div.text hgroup {
   
@@ -59,6 +62,7 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
+  align-items: start;
 }
 #hongsam div.wrap .hongsamlist div.hsstick div.text li {
   
@@ -86,6 +90,7 @@
   width: 40px;
   display: block;
   text-align: center;
+  margin-right: 15px;
 }
 #hongsam div.wrap .hongsamlist div.hsstick div.text li a {
   
@@ -151,6 +156,7 @@
   align-items: end;
   position: relative;
   overflow: hidden;
+  transition: all 2s;
 }
 #hongsam div.wrap .hongsamlist div.hsgold div.hsimg {
   
@@ -163,6 +169,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+  transition: all 2s;
 }
 #hongsam div.wrap .hongsamlist div.hsgold div.text {
   
@@ -203,18 +210,24 @@
 }
 #hongsam div.wrap .hongsamlist div.hsgold div.text li:nth-of-type(2):before{
   content: "";
-  width: 55px;
+
+}
+.star{
+    width: 55px;
   height: 20px;
   display: block;
   background-image: url(../img/star.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+    font-size: 0px;
 }
 #hongsam div.wrap .hongsamlist div.hsgold div.text li:nth-of-type(3){
   
   width: 200px;
   height: 26px;
+  display: flex;
+  justify-content: right;
 }
 #hongsam div.wrap .hongsamlist div.hsgold div.text li:nth-of-type(4){
   
@@ -229,6 +242,7 @@
   width: 40px;
   display: block;
   text-align: center;
+  margin-right: 15px;
 }
 #hongsam div.wrap .hongsamlist div.hsgold div.text li a {
   
@@ -251,7 +265,6 @@
   display: flex;
   left: 25px;
   gap: 20px;
-  display: none;
 }
 #hongsam div.wrap .hongsamlist div.hsgold div.event:before{
   content: "";
@@ -285,4 +298,7 @@
 #hongsam div.wrap .hongsamlist div.hsgold div.event ul li a {
   
   border-bottom: 1px solid;
+}
+.wid{
+  width: 70%;
 }

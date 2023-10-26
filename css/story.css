@@ -11,27 +11,179 @@
   background-color: #f9f9f9;
   justify-content: center;
 }
-#story div.wrap h2 {
-  
+#story div.wrap h2{
+  padding-top: 100px;
+  color: #221e1f;
+  font-weight: 500;
   font-size: 18px;
-}
-#story div.wrap div.text {
-  
-  margin-top: 35px;
-}
-#story div.wrap div.text h3 {
-  
-  font-size: 50px;
-}
-#story div.wrap div.text ul {
-  
+  letter-spacing: -.025em;
   text-align: center;
-  display: none;
 }
-#story div.wrap div.text ul li {
+#story div.wrap .list{
+  margin-top: 60px;
+}
+#story div.wrap .item{
+  position: static;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+#story div.wrap .tit{
+  line-height: 1.2;
+  color: #ccc;
+  font-weight: 500;
+  font-size: 50px;
+  text-align: center;
+  position: relative;
+  transition: all .3s ease;
+  z-index: 2;
+}
+#story div.wrap .con{
+  height: 0;
+  padding-top: 0;
+  padding-bottom: 25px;
+  color: #221e1f;
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+  position: relative;
+  opacity: 0;
+  transition: height .9s ease, padding .9s ease, opacity .4s ease;
+  z-index: 2;
+}
+#story div.wrap .visual{
   
+  width: 1920px;
+  height: 700px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  z-index: 1;
 }
-#story div.wrap a {
+#story div.wrap ul.list .item1  .visual .img1{
+  
+  background-image: url(../img/img1.png);
+  opacity: 1;
+} 
+#story div.wrap ul.list .item1  .visual .img2{
+    background-image: url(../img/img2.png);
+    opacity: 1;
+}
+#story div.wrap ul.list .item2  .visual .img1{
+  background-image: url(../img/2img1.png);
+    opacity: 0;
+} 
+#story div.wrap ul.list .item2  .visual .img2{
+    background-image: url(../img/2img2.png);
+      opacity: 0;
+}
+#story div.wrap ul.list .item3  .visual .img1{
+  
+  background-image: url(../img/3img1.png);
+      opacity: 0;
+} 
+#story div.wrap ul.list .item3  .visual .img2{
+    background-image: url(../img/3img2.png);
+      opacity: 0;
+}
+
+#story div.wrap .visual .img1{
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-transform: translateY(-30px);
+  transform: translateY(-30px);
+  transition: opacity .6s, -webkit-transform 0s .6s;
+  transition: opacity .6s, transform 0s .6s;
+  transition: opacity .6s, transform 0s .6s, -webkit-transform 0s .6s;
+  transition-timing-function: ease-out;
+}
+#story div.wrap .visual .img2{
+  
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-transform: translateY(30px);
+  transform: translateY(30px);
+  transition: opacity .6s, -webkit-transform 0s .6s;
+  transition: opacity .6s, transform 0s .6s;
+  transition: opacity .6s, transform 0s .6s, -webkit-transform 0s .6s;
+  transition-timing-function: ease-out;
+}
+
+#story div.wrap ul.list .item1:hover  .visual .img1{
+  content: '';
+  opacity: 1;
+}
+
+#story div.wrap ul.list .item1:hover  .visual .img2{
+  content: '';
+  opacity: 1;
+}
+#story div.wrap ul.list .item2:hover  .visual .img1{
+  content: '';
+    opacity: 1;
+}
+#story div.wrap ul.list .item2:hover  .visual .img2{
+  content: '';
+    opacity: 1;
+}
+#story div.wrap ul.list .item3:hover  .visual .img1{
+  content: '';
+    opacity: 1;
+}
+#story div.wrap ul.list .item3:hover  .visual .img2{
+  content: '';
+    opacity: 1;
+}
+/* tit hover  */
+#story div.wrap ul.list .item:hover .tit{
+  color: #221e1f;
+}
+#story div.wrap ul.list .item:hover .tit::after{
+  width: 100%;
+  opacity: 1;
+  transition: width 1.2s ease, opacity 0s ease;
+}
+#story div.wrap ul.list .item .tit:after{
+  content: '';
+  width: 0;
+  height: 2px;
+  background-color: #201f1f;
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: width 0s ease, opacity 1s ease;
+}
+/* con */
+#story div.wrap ul.list .item:hover .con{
+  padding-top: 28px;
+  opacity: 1;
+  transition: height .9s ease, padding .9s ease, opacity 1.2s ease;
+}
+#story div.wrap ul.list .item1:hover .con{
+    height: 60px
+}
+#story div.wrap ul.list .item2:hover .con{
+    height: 60px
+}
+#story div.wrap ul.list .item3:hover .con{
+    height: 90px
+}
+#story div.wrap a{
   
   width: 90px;
   height: 50px;
@@ -40,9 +192,7 @@
   background-repeat: no-repeat;
   background-size: contain;
   font-size: 0;
-  margin-top: 50px;
 }
 #story div.wrap a:hover{
-  
-  background-image: url(../img/tt.icon6.hover.png);
+    background-image: url(../img/tt.icon6.hover.png);
 }

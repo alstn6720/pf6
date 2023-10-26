@@ -4,9 +4,12 @@
 #td div.warp {
   
   height: 900px;
-  margin: 0 auto;
   padding-top: 100px;
-  width: 1100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 100px;
 }
 #td div.warp h2 {
   
@@ -48,32 +51,31 @@ box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.05);
   
   display: flex;
   width: 100%;
-  height: 600px;
-  margin-top: 100px;
+  margin-top: 20px;
+  justify-content: center;
 }
-#td div.warp div.evimal a div.tdimg {
+#td div.warp div.evimal div.tdimg {
   
   width: 360px;
   height: 600px;
   display: flex;
   flex-direction: column;
-  /*! justify-content: end; */
-  position: relative;
 }
-#td div.warp div.evimal a div.tdimg span.img{
-  width: 360px;
-  height: 360px;
-  -webkit-transform: scale(.7);
+#td div.warp div.evimal div.tdimg a{
+  
+  width: 100%;
+  height: 100%;
+}
+#td div.warp div.evimal div.tdimg span.img{
+  width: 420px;
+  height: 420px;
   transform: scale(.7);
-  transition: -webkit-transform .5s;
-  transition: transform .5s;
   transition: transform .5s, -webkit-transform .5s;
-  -webkit-transform-origin: bottom center;
   transform-origin: bottom center;
-  -webkit-clip-path: polygon(30% 0, 70% 0, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0 70%, 0 30%);
   clip-path: polygon(30% 0, 70% 0, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0 70%, 0 30%);
+  display: block;
 }
-#td div.warp div.evimal a div.tdimg span.img img{
+#td div.warp div.evimal div.tdimg span.img img{
   position: absolute;
   top: 0;
   left: 0;
@@ -83,30 +85,30 @@ box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.05);
   width: 100%;
   height: 100%;
 }
-#td div.warp div.evimal a:nth-of-type(2) div.tdimg span.img{
+#td div.warp div.evimal:nth-of-type(2) div.tdimg span.img{
 
   -webkit-transform: scale(1) translateZ(0);
   transform: scale(1) translateZ(0);
 }
-#td div.warp div.evimal a div.tdimg span.img img:hover{
+#td div.warp div.evimal div.tdimg span.img img:hover{
   transform: scale(1.2) translateZ(0);
 }
-#td div.warp div.evimal a div.tdimg ul{
+#td div.warp div.evimal div.tdimg ul{
 
   margin-top: 30px;
 }
-#td div.warp div.evimal a div.tdimg ul li{
+#td div.warp div.evimal div.tdimg ul li{
 
   display: flex;
 }
-#td div.warp div.evimal a div.tdimg ul:nth-child(2) li:nth-of-type(1){
+#td div.warp div.evimal div.tdimg ul:nth-child(2) li:nth-of-type(1){
   
 }
-#td div.warp div.evimal a div.tdimg ul.best li:nth-child(2){
+#td div.warp div.evimal div.tdimg ul.best li:nth-child(2){
   
   background-color: #a69471;
 }
-#td div.warp div.evimal a div.tdimg h3 {
+#td div.warp div.evimal div.tdimg h3 {
   
   margin-top: 20px;
   width: 100%;
@@ -115,7 +117,7 @@ box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.05);
   font-size: 18px;
   font-weight: 600;
 }
-#td div.warp div.evimal a div.tdimg time {
+#td div.warp div.evimal div.tdimg time {
   
   display: block;
   margin-top: 4px;
@@ -123,18 +125,18 @@ box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.05);
   color: #666;
   line-height: 1.429em;
 }
-#td div.warp div.evimal a div.tdimg .textbox{
+#td div.warp div.evimal div.tdimg .textbox{
   width: 250px;
   margin: 30px auto 0;
 }
-#td div.warp div.evimal a div.tdimg .textbox .grade-box{
+#td div.warp div.evimal div.tdimg .textbox .grade-box{
   
   margin-top: 10px;
 }
-#td div.warp div.evimal a div.tdimg .textbox .grade-box .grade-star{
+#td div.warp div.evimal div.tdimg .textbox .grade-box .grade-star{
   
 }
-#td div.warp div.evimal a div.tdimg .textbox .grade-box .grade-star .fill{
+#td div.warp div.evimal div.tdimg .textbox .grade-box .grade-star .fill{
   
   padding-top: 11px;
 }

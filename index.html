@@ -19,6 +19,7 @@
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <script type="text/javascript" src="slick/slick.min.js"></script>
+    <!-- slick -->
     <script>
         $(document).ready(function(){
             $('.titleani').slick({
@@ -30,19 +31,101 @@
                 autoplaySpeed: 1000,
                 speed:3000,
                 fade: true
-
             });
-            $('.snsani').slick({
-                dots:true,
-                infinite: true,
-                slidesToShow: 3,
-                slidesToScroll: 3,
-                autoplay: true,
-                autoplaySpeed: 1000,
-                speed:3000
 
+            $('.autoplay').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
             });
         });
+    </script>
+    <script>
+        $(document).ready(function(){
+            $('#hongsam div.wrap .hongsamlist div.hsgold div.text ul').hide()
+            $('#hongsam div.wrap .hongsamlist div.hsgold div.event').hide()
+            $('#hongsam div.wrap .hongsamlist div.hsstick div.text ul').hide()
+            $('#hongsam div.wrap .hongsamlist div.hsstick div.event').hide()
+            $('#hongsam div.wrap .hongsamlist div.hsstick').mouseover(function(){
+                $(this).css('width','70%')
+                $('#hongsam div.wrap .hongsamlist div.hsgold').css('width','30%')
+                $('#hongsam div.wrap .hongsamlist div.hsstick div.text ul').show()
+                $('#hongsam div.wrap .hongsamlist div.hsgold div.text ul').hide()
+                $('#hongsam div.wrap .hongsamlist div.hsgold div.event').hide()
+                $('#hongsam div.wrap .hongsamlist div.hsstick div.event').show()
+                $('#hongsam div.wrap .hongsamlist div.hsstick div.hsimg').css('transform','translate(18%) scale(0.8)')
+                $('#hongsam div.wrap .hongsamlist div.hsgold div.hsimg').css('transform','translate(8%) scale(0.8)')
+
+            });
+            $('#hongsam div.wrap .hongsamlist div.hsgold').mouseover(function(){
+                $(this).css('width','70%')
+                $('#hongsam div.wrap .hongsamlist div.hsstick').css('width','30%')
+                $('#hongsam div.wrap .hongsamlist div.hsgold div.text ul').show()
+                $('#hongsam div.wrap .hongsamlist div.hsstick div.text ul').hide()
+                $('#hongsam div.wrap .hongsamlist div.hsstick div.event').hide()
+                $('#hongsam div.wrap .hongsamlist div.hsgold div.event').show()
+                $('#hongsam div.wrap .hongsamlist div.hsgold div.hsimg').css('transform','translate(-17%) scale(0.8)')
+                $('#hongsam div.wrap .hongsamlist div.hsstick div.hsimg').css('transform','translate(8%) scale(0.8)')
+            });
+            $('#hongsam div.wrap .hongsamlist div.hsstick').mouseout(function(){
+                $(this).css('width','50%')
+            });
+            $('#hongsam div.wrap .hongsamlist div.hsgold').mouseout(function(){
+                $(this).css('width','50%')
+
+            });
+            $('#hongsam div.wrap .hongsamlist').mouseout(function(){
+                $('#hongsam div.wrap .hongsamlist div.hsgold').css('width','50%')
+                $('#hongsam div.wrap .hongsamlist div.hsstick').css('width','50%')
+                $('#hongsam div.wrap .hongsamlist div.hsgold div.event').hide()
+                $('#hongsam div.wrap .hongsamlist div.hsgold div.text ul').hide()
+                $('#hongsam div.wrap .hongsamlist div.hsstick div.text ul').hide()
+                $('#hongsam div.wrap .hongsamlist div.hsstick div.event').hide()
+                $('#hongsam div.wrap .hongsamlist div.hsgold div.hsimg').css('transform','translate(0%) scale(0.8)')
+                $('#hongsam div.wrap .hongsamlist div.hsstick div.hsimg').css('transform','translate(0%) scale(0.8)')
+            });
+
+        });
+        $(document).ready(function(){
+            $('#bs div.warp div.evimal a div.bs div.img .smimg').hide()
+            $('#bs .warp .evimal a div.bs').hover(
+                function () {
+                    $(this).find('.img .smimg').show();
+                },
+                function () {
+                    $(this).find('.img .smimg').hide();
+                }
+            );
+        });
+
+
+        $(document).ready(function(){
+            $('#story div.wrap .item2').mouseover(function(){
+                $('#story div.wrap .item1 .visual').css('opacity','0')
+            }
+            );
+            $('#story div.wrap .item2').mouseout(function(){
+                $('#story div.wrap .item1 .visual').css('opacity','1')
+            }
+            );
+            $('#story div.wrap .item3').mouseover(function(){
+                $('#story div.wrap .item1 .visual').css('opacity','0')
+            }
+            );
+            $('#story div.wrap .item3').mouseout(function(){
+                $('#story div.wrap .item1 .visual').css('opacity','1')
+            }
+            );
+        });
+    </script>
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        $(document).ready(function(){
+            AOS.init();
+        })
     </script>
 </head>
 <body>
@@ -151,7 +234,7 @@
                             </hgroup>
                             <ul class="">
                                 <li>천지양 내가먹는 홍삼스틱(10g x 100포) x1박스</li>
-                                <li class="star">(499)</li>
+                                <li class="star"></li>
                                 <li><span>67%</span>72,900원</li>
                                 <li><a href="">구매하기</a></li>
                             </ul>
@@ -176,7 +259,7 @@
                             </hgroup>
                             <ul class="">
                                 <li>천지양 명품 홍삼정 골드(10ml x 30포) x1박스 1개월분</li>
-                                <li class="star">별점</li>
+                                <li class="star"></li>
                                 <li><span>75%</span>31,900원</li>
                                 <li><a href="">구매하기</a></li>
                             </ul>
@@ -197,8 +280,8 @@
             <div class="warp">
                 <h2>Today's Deal</h2>
                 <div class="evimal">
-                    <a href="">
-                        <div class="tdimg">
+                    <div class="tdimg">
+                        <a href="">
                             <span class="img">
                                 <img src="img/td1.jpg" alt="">
                             </span>
@@ -217,10 +300,10 @@
                                     <li><span class="tag rate">77%</span>29,700원</li>
                                 </ul>
                             </div>
-                        </div>
-                    </a>
-                    <a href="">
-                        <div class="tdimg">
+                        </a>
+                    </div>
+                    <div class="tdimg">
+                        <a href="">
                             <span class="img">
                                 <img src="img/td2.jpg" alt="">
                             </span>
@@ -239,10 +322,10 @@
                                     <li><span class="tag rate">77%</span>29,700원</li>
                                 </ul>
                             </div>
-                        </div>
-                    </a>
-                    <a href="">
-                        <div class="tdimg">
+                        </a>
+                    </div>
+                    <div class="tdimg">
+                        <a href="">
                             <span class="img">
                                 <img src="img/td1.jpg" alt="">
                             </span>
@@ -261,15 +344,15 @@
                                     <li><span class="tag rate">77%</span>29,700원</li>
                                 </ul>
                             </div>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
         <section id="bs">
             <div class="warp">
-                <h2>Today's Deal</h2>
-                <div class="evimal">
+                <h2>Best Seller</h2>
+                <div class="evimal" data-aos="fade-up" data-aos-duration="1000">
                     <a href="">
                         <div class="bs">
                             <div class="img">
@@ -283,7 +366,12 @@
                             <h3>[천지양 눈엔 초임계 루테인 아스타잔틴(30캡슐) x3박스 3개월분</h3>
                             <ul>
                                 <li class="star">별점</li>
-                                <li><span>77%</span>29,700원</li>
+                                <li class="cont">
+                                    <span class="bh">비회원가</span>
+                                    <span class="num discount">183,000</span>
+                                    <span class="won">원</span>
+                                </li>
+                                <li><span class="tag rate">77%</span>29,700원</li>
                             </ul>
                         </div>
                     </a>
@@ -300,7 +388,12 @@
                             <h3>천지양 수면진심 감태추출물(30정) x1박스 1개월분</h3>
                             <ul>
                                 <li class="star">별점</li>
-                                <li><span></span>116,000원</li>
+                                <li class="cont">
+                                    <span class="bh">비회원가</span>
+                                    <span class="num discount">183,000</span>
+                                    <span class="won">원</span>
+                                </li>
+                                <li><span class="tag rate">67%</span>116,000원</li>
                             </ul>
                         </div>
                     </a>
@@ -317,7 +410,12 @@
                             <h3>[천지양 눈엔 초임계 루테인 아스타잔틴(30캡슐) x3박스 3개월분</h3>
                             <ul>
                                 <li class="star">별점</li>
-                                <li><span>77%</span>29,700원</li>
+                                <li class="cont">
+                                    <span class="bh">비회원가</span>
+                                    <span class="num discount">183,000</span>
+                                    <span class="won">원</span>
+                                </li>
+                                <li><span class="tag rate">77%</span>29,700원</li>
                             </ul>
                         </div>
                     </a>
@@ -334,7 +432,12 @@
                             <h3>[천지양 눈엔 초임계 루테인 아스타잔틴(30캡슐) x3박스 3개월분</h3>
                             <ul>
                                 <li class="star">별점</li>
-                                <li><span>77%</span>29,700원</li>
+                                <li class="cont">
+                                    <span class="bh">비회원가</span>
+                                    <span class="num discount">183,000</span>
+                                    <span class="won">원</span>
+                                </li>
+                                <li><span class="tag rate">77%</span>29,700원</li>
                             </ul>
                         </div>
                     </a>
@@ -351,7 +454,12 @@
                             <h3>천지양 수면진심 감태추출물(30정) x1박스 1개월분</h3>
                             <ul>
                                 <li class="star">별점</li>
-                                <li><span></span>116,000원</li>
+                                <li class="cont">
+                                    <span class="bh">비회원가</span>
+                                    <span class="num discount">183,000</span>
+                                    <span class="won">원</span>
+                                </li>
+                                <li><span class="tag rate">50%</span>116,000원</li>
                             </ul>
                         </div>
                     </a>
@@ -368,7 +476,12 @@
                             <h3>[천지양 눈엔 초임계 루테인 아스타잔틴(30캡슐) x3박스 3개월분</h3>
                             <ul>
                                 <li class="star">별점</li>
-                                <li><span>77%</span>29,700원</li>
+                                <li class="cont">
+                                    <span class="bh">비회원가</span>
+                                    <span class="num discount">183,000</span>
+                                    <span class="won">원</span>
+                                </li>
+                                <li><span class="tag rate">77%</span>29,700원</li>
                             </ul>
                         </div>
                     </a>
@@ -385,7 +498,12 @@
                             <h3>[천지양 눈엔 초임계 루테인 아스타잔틴(30캡슐) x3박스 3개월분</h3>
                             <ul>
                                 <li class="star">별점</li>
-                                <li><span>77%</span>29,700원</li>
+                                <li class="cont">
+                                    <span class="bh">비회원가</span>
+                                    <span class="num discount">183,000</span>
+                                    <span class="won">원</span>
+                                </li>
+                                <li><span class="tag rate">77%</span>29,700원</li>
                             </ul>
                         </div>
                     </a>
@@ -393,7 +511,7 @@
             </div>
         </section>
         <section id="sleep">
-            <div class="wrap">
+            <div class="wrap" data-aos="fade-up" data-aos-duration="1000">
                 <div class="text">
                     <hgroup>
                         <h2>하루라도 편한 잠을 꿈꾸는 당신을 위해</h2>
@@ -404,36 +522,37 @@
                 </div>
                 <div class="img">
                 </div>
-                <span>
-                    <button>prev</button>
-                    <button>next</button>
-                </span>
             </div>
         </section>
-        <section id="story">
+        <section id="story" data-aos="fade-up" data-aos-duration="1000">
             <div class="wrap">
                 <h2>BRAND STORY</h2>
-                <div class="text">
-                <h3>오랜 역사속 증명된 원료</h3>
-                <ul>
-                    <li>지친 현대인들에게 필요한 부분을 </li>
-                    <li>오랜 역사속에서 증명된 원료로 채우다.</li>
+                <ul class="list">
+                    <li class="item item1">
+                        <span class="tit">오랜 역사속 증명된 원료</span>
+                        <span class="con">지친 현대인들에게 필요한 부분을 <br>오랜 역사속에서 증명된 원료로 채우다.</span>
+                        <span class="visual">
+                            <span class="img1"></span>
+                            <span class="img2"></span>
+                        </span>
+                    </li>
+                    <li class="item item2">
+                        <span class="tit">15년의 노하우</span>
+                        <span class="con">천지양은 15년의 노하우로 심혈을 기울여 <br>천지양 브랜드 전문성 원리에 따라 제품을 만듭니다.</span>
+                        <span class="visual">
+                            <span class="img1"></span>
+                            <span class="img2"></span>
+                        </span>
+                    </li>
+                    <li class="item item3">
+                        <span class="tit">고객감동브랜드지수 1위</span>
+                        <span class="con">고객감동브랜드지수 1위에 걸맞게 <br>소비자의 건강 고민을 집중적으로 연구하고 <br> 꼭 필요한 성분과 우리의 가치를 담겠습니다.</span>
+                        <span class="visual">
+                            <span class="img1"></span>
+                            <span class="img2"></span>
+                        </span>
+                    </li>
                 </ul>
-                </div>
-                <div class="text">
-                    <h3>15년의 노하우</h3>
-                    <ul>
-                        <li>천지양은 15년의 노하우로 심혈을 기울여 </li>
-                        <li>천지양 브랜드 전문성 원리에 따라 제품을 만듭니다.</li>
-                    </ul>
-                </div>
-                <div class="text">
-                    <h3>고객감동브랜드지수 1위</h3>
-                    <ul>
-                        <li>고객감동브랜드지수 1위에 걸맞게 </li>
-                        <li>소비자의 건강 고민을 집중적으로 연구하고 꼭 필요한 성분과 우리의 가치를 담겠습니다.</li>
-                    </ul>
-                </div>
                 <a href="">들어가기</a>
             </div>
         </section>
